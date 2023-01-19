@@ -1,0 +1,225 @@
+/* outfit-300 - latin */
+@font-face {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 300;
+    src: local(''),
+         url('../fonts/outfit-v6-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/outfit-v6-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* outfit-regular - latin */
+  @font-face {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/outfit-v6-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/outfit-v6-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* outfit-600 - latin */
+  @font-face {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    src: local(''),
+         url('../fonts/outfit-v6-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/outfit-v6-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  *
+  {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  html
+  {
+    font-size: 62.5%;
+    height: 100%;
+  }
+  a
+  {
+    text-decoration: none;
+  }
+  ul, ol
+  {
+    list-style: none;
+  }
+  img
+  {
+    display: flex;
+  }
+  body
+  {
+    font-family: 'Outfit', Arial, Helvetica, sans-serif;
+    flex-direction: column;
+    height: 100%;
+    background: #0D192C;
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 26px;
+    color: #8BACD9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+.card {
+    background: #15263F;
+    box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.0952917);
+    border-radius: 15px;
+    padding: 2.4rem 2.4rem 3.2rem 2.4rem;
+    max-width: 350px;
+}
+.card-image
+{
+    border-radius: 10.5px;
+    margin-bottom: 2.4rem;
+    cursor: pointer;
+}
+.card-hover{
+    position: relative;
+}
+.overlay
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #00FFF8;
+    transition: 0.5s;
+    border-radius: 10.5px;
+    cursor: pointer;
+    opacity: 0;
+}
+.koz
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.card-hover:hover  .koz
+{
+  opacity: 1;
+}
+.card-hover:hover .overlay
+{
+    opacity: 0.5;
+}
+
+.card-title
+{
+    font-family: 'Outfit';
+    font-weight: 600;
+    font-size: 2.2rem;
+    line-height: 28px;
+    color: #fff;
+    margin-bottom: 1.6rem;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.card-title:hover
+{
+    color: #00FFF8;
+}
+.card-description
+{
+    margin-bottom: 2.4rem;
+}
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2.4rem;
+}
+.eth {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+.eth h5
+{
+    font-family: 'Outfit';
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 20px;
+    color: #00FFF8;
+}
+.left {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+.left h5
+{
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;    
+}
+.card-divider {
+    background: #2E405A;
+    border: 1px solid #2E405A;
+    margin-bottom: 1.6rem;
+}
+.creation {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+.creation p
+{
+    font-family: 'Outfit';
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 20px;
+    color: #8BACD9;
+}
+.creation span
+{
+    color: #fff;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.creation span:hover
+{
+    color: #00FFF8;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 375px)
+{
+    .card
+    {
+        max-width: 327px;
+    }
+    .card-image
+    {
+        width: 278px;
+        height: 278px;
+    }
+}
+@media (max-width: 340px)
+{
+    .card
+    {
+        max-width: 300px;
+    }
+    .card-image
+    {
+        width: 250px;
+        height: 250px;
+    }
+}
