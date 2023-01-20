@@ -86,7 +86,7 @@
     right: 0;
     bottom: 0;
     background: #00FFF8;
-    transition: 0.5s;
+    transition: 0.3s;
     border-radius: 10.5px;
     cursor: pointer;
     opacity: 0;
@@ -98,7 +98,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0;
-    transition: 0.5s;
+    transition: 0.3s;
     cursor: pointer;
 }
 .card-hover:hover  .koz
@@ -118,7 +118,7 @@
     line-height: 28px;
     color: #fff;
     margin-bottom: 1.6rem;
-    transition: 0.5s;
+    transition: 0.3s;
     cursor: pointer;
 }
 .card-title:hover
@@ -183,7 +183,7 @@
 .creation span
 {
     color: #fff;
-    transition: 0.5s;
+    transition: 0.3s;
     cursor: pointer;
 }
 .creation span:hover
